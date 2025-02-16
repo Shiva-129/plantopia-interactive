@@ -5,7 +5,7 @@ import { Stats } from "@/components/Stats";
 import { PlantGallery } from "@/components/PlantGallery";
 import { motion } from "framer-motion";
 
-const Index = () => {
+export default function Index() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -34,6 +34,4 @@ const Index = () => {
       </section>
     </div>
   );
-};
-
-export default Index;
+}

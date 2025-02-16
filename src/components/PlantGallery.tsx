@@ -49,7 +49,7 @@ export function PlantGallery() {
               viewport={{ once: true }}
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="aspect-square relative overflow-hidden">
+              <div className="aspect-square relative overflow-hidden bg-gray-100">
                 <img
                   src={plant.image}
                   alt={plant.name}
