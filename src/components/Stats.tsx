@@ -48,11 +48,21 @@ function StatCard({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay, duration: 0.5 }}
       viewport={{ once: true }}
-      className="bg-black p-6 rounded-2xl text-center"
+      className="relative bg-black p-6 rounded-2xl text-center group"
     >
-      <Icon className="w-8 h-8 text-white mx-auto mb-4" />
-      <h3 className="text-white text-xl font-semibold mb-2">{label}</h3>
-      <p className="text-white text-2xl font-bold">{value}</p>
+      {/* Glow effect */}
+      <div className="absolute inset-0 bg-primary/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      
+      {/* Content */}
+      <div className="relative z-10">
+        <Icon className="w-8 h-8 text-white mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+        <h3 className="text-white text-xl font-semibold mb-2 group-hover:text-primary-light transition-colors duration-300">
+          {label}
+        </h3>
+        <p className="text-white text-2xl font-bold group-hover:text-primary-light transition-colors duration-300">
+          {value}
+        </p>
+      </div>
     </motion.div>
   );
 }
