@@ -10,7 +10,6 @@ export default function Index() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      <Stats />
       <PlantGallery />
       
       <section id="about" className="py-20">
@@ -32,6 +31,8 @@ export default function Index() {
           </motion.div>
         </div>
       </section>
+
+      <Stats />
     </div>
   );
 }
