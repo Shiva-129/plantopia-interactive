@@ -2,6 +2,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Stats } from "@/components/Stats";
+import { PlantGallery } from "@/components/PlantGallery";
 import { motion } from "framer-motion";
 
 const Index = () => {
@@ -10,6 +11,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Stats />
+      <PlantGallery />
       
       <section id="about" className="py-20">
         <div className="container mx-auto px-4">

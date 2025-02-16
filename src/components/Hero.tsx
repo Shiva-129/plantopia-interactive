@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="min-h-screen relative overflow-hidden bg-gradient-to-b from-background to-primary/10">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('/lovable-uploads/58117a72-a422-4bd3-b21d-a51d180049bb.png')] bg-cover bg-center opacity-10" />
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/9f6a7af7-048c-4897-b213-7555056585bf.png')] bg-cover bg-center opacity-10" />
       </div>
       
       <div className="container mx-auto px-4 pt-32 pb-20 relative z-10">
